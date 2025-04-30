@@ -21,7 +21,7 @@ app.use("/product",productRoutes)
 
 
 
-app.listen(3000,() =>
+app.listen(process.env.PORT || 5000,() =>
 {
     console.log("Port is running at 3000")
 })
